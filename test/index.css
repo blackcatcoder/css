@@ -1,0 +1,21 @@
+
+
+.list{
+    display: grid;
+    background: yellow;
+    height: 300px;
+    align-content: center;;
+    justify-content: center;
+}
+
+.item{
+    background: green;
+}
+
+h1{
+    background: yellow;
+}
+
+p{
+    background: yellow;
+}

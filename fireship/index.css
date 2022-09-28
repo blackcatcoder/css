@@ -1,0 +1,13 @@
+
+
+.grid{
+    display: grid;
+    gap: 1rem;
+
+    // grid-template-columns: 1fr 1fr 1fr 1fr;
+    // tuong dung voi dong o tren
+    // grid-template-columns: repeat(1fr);
+
+    grid-template-columns: repeat(auto-fill, minmax(240px, 300px));
+
+}
