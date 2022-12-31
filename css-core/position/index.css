@@ -1,0 +1,58 @@
+
+.test{
+    border: 1px solid green;
+   // top: 100px;
+    position: relative;
+}
+
+/* 1: is default of html element */
+/* 2: are not affected by the top, bottom, left, and right properties. */
+/* ko ảnh hưởng với các thuộc tính top, bottom, left, right */
+.static{
+    position: static;
+    border: 1px solid red;
+    left: 50px;
+}
+
+/* 1: setting top, left, bottom, right will cause affected to it's position */
+/* 1.1: top, left, bottom, right sẽ có ảnh hưởng */
+/* bị ảnh hưởng với các thuộc tính top, left, bottom, right */
+.relative{
+    position: relative;
+    border: 1px solid blue;
+    left: 50px;
+}
+
+/* 1: is positioned relative to the viewport */
+/* 1.1 được định vị dựa vào viewport */
+.fixed{
+    position: fixed;
+    border: 1px solid red;
+    width: 300px;
+    bottom: 0;
+    right: 0;
+}
+
+/* 1: is positioned relative to the nearest positioned ancestor  */
+/* 1.1 được định vị dựa vào thẻ cha gần nhất của nó, nếu trường hợp nó ko có thẻ cha thì nó sẽ dựa vào thẻ body */
+/* However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling. */
+.parent{
+    position: relative;
+    border: 1px solid red;
+    height: 300px;
+    left: 30px;
+    top: 10px;
+}
+.children1{
+    border: 1px solid blue;
+}
+/* định vị trí dựa vào thẻ cha gần nhất có vị trí relative */
+/* nếu ko tìm thấy thẻ cha thì nó lấy thẻ body làm vị trí định vị */
+.absolute{
+    position: absolute;
+    border: 1px solid green;
+    width: 200px;
+    height: 30px;
+    left: 0;
+    bottom: 0;
+}
