@@ -1,10 +1,12 @@
 
-.footer1{
-    border: 1px solid red;
-    margin-right: 50px;
+.flex-container{
+    display: flex;
+    background-color: DodgerBlue;
 }
 
-.footer2{
-    border: 1px solid red;
-    margin-left: 50px;
+.flex-container > div{
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
 }
